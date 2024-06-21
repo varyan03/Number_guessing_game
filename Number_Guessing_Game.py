@@ -17,5 +17,9 @@ else :
     print("Only Numerical values accepted ")
     quit()
 
+#generating a random number using random function
+random_num=random.randint(0,range)
+
+
 
 
