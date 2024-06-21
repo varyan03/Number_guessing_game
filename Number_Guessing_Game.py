@@ -3,6 +3,9 @@ import random
 #asking the user to enter a number that is greater than 0
 range=input("Enter a number")
 
+#variable to count the number of guesses
+guess=0
+
 #checking if its a digit and not 
 if range.isdigit():
     range=int(range)
@@ -23,6 +26,7 @@ random_num=random.randint(0,range)
 
 #checking if the user has guessed the correct number or not
 while True:
+    guess+=1
     user_guess=input("Guess the number!!")
 
     #checking if the user has entered the number or not
@@ -44,5 +48,5 @@ while True:
     else:
         print("Enter a smaller number")
     
-print(random_num)
+print("You guessed the number in ",guess,"guesses")
 
